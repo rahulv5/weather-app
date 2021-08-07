@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
+
+
+body {
+    color: #fff;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #CFD8DC;
+    background-repeat: no-repeat
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+    background-image: url("https://i.imgur.com/dpqZJV5.jpg");
+    background-size: cover;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 4px #9E9E9E;
+    margin-top: 50px;
+    margin-bottom: 50px
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.time-font {
+    font-size: 50px
+}
+
+.sm-font {
+    font-size: 18px
+}
+
+.med-font {
+    font-size: 28px
+}
+
+.large-font {
+    font-size: 60px
+}
+
+.city-feat{
+    text-align: right;
+}
+
+/* Search button CSS */
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .search {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .searchTerm {
+    width: 50%;
+    /* border: 3px solid #00b4cc; */
+    border: none;
+    padding: 16px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 18px;
   }
-}
+  
+  .searchTerm:focus {
+    color: #00b4cc;
+  }
+  
+  .searchButton {
+    width: 80px;
+    height: 32px;
+    border: none;
+    background: #048b9c;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+    outline: none;
+    font-size: 16px;
+    margin-top:0px;
+  }
+  
+  .searchButton:hover {
+    background-color: #17b8ce;
+  }

@@ -8,9 +8,8 @@ const App = () => {
   const [weatherType, setWeatherType] = useState("");
   const [cityName, setCityName] = useState("");
   const currDate = new Date();
-  const [weatherBackground, setWeatherBackground] = useState(
-    "https://t4.ftcdn.net/jpg/02/66/38/15/360_F_266381525_alVrbw15u5EjhIpoqqa1eI5ghSf7hpz7.jpg"
-  );
+  const weatherBackground =
+    "https://t4.ftcdn.net/jpg/02/66/38/15/360_F_266381525_alVrbw15u5EjhIpoqqa1eI5ghSf7hpz7.jpg";
 
   const handleSearch = (event) => {
     setSearch(event.target.value);
